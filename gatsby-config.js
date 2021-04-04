@@ -29,8 +29,8 @@ module.exports = {
             url: `https://twitter.com/knilesh_`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/_knilesh`,
+            name: `Github`,
+            url: `https://github.com/bleugod`,
           },
         ],
       },
@@ -47,7 +47,7 @@ module.exports = {
       options: {
         name: `nilesh kumar - security technology society`,
         short_name: `minimal-blog`,
-        description: `web blog about hacking around the world `,
+        description: `web blog about hacking around the world`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,

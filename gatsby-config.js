@@ -6,7 +6,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Nilesh Kumar`,
+    siteTitle: `nile.sh`,
+    siteTitleAlt: `Nilesh Kumar's Blog`,
+    siteHeadline: `Nilesh Kumar's Blog`,
+    siteUrl: `https://elegant-borg-d05721.netlify.app/`,
+    siteDescription: `blogs about hacking and security, sometimes other disciplines too`,
+    siteLanguage: `en`,
+    siteImage: `./banner.jpg`,
+    author: `@knilesh_`
   },
   plugins: [
     {
@@ -47,14 +54,14 @@ module.exports = {
       options: {
         name: `nilesh kumar - security technology society`,
         short_name: `minimal-blog`,
-        description: `web blog about hacking around the world`,
+        description: `web log about hacking sometimes other disciplines`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/android-icon-192x192`,
             sizes: `192x192`,
             type: `image/png`,
           },

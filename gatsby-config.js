@@ -6,7 +6,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `nile.sh`,
+    siteTitle: `Nilesh`,
     siteTitleAlt: `Nilesh Kumar's Blog`,
     siteHeadline: `Nilesh Kumar's Blog`,
     siteUrl: `https://elegant-borg-d05721.netlify.app/`,

@@ -6,9 +6,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Nilesh`,
-    siteTitleAlt: `Nilesh Kumar's Blog`,
-    siteHeadline: `Nilesh Kumar's Blog`,
+    siteTitle: `nilesh`,
+    siteTitleAlt: `nilesh kumar's website`,
+    siteHeadline: `nilesh kumar's website`,
     siteUrl: `https://elegant-borg-d05721.netlify.app/`,
     siteDescription: `blogs about hacking and security, sometimes other disciplines too`,
     siteLanguage: `en`,
@@ -31,6 +31,14 @@ module.exports = {
           },
         ],
         externalLinks: [
+          {
+            name: `YouTube`,
+            url: `https://www.youtube.com/channel/UCDPM7ajDWA4Tk-r4jzfxwqw`,
+          },
+          {
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/theknilesh/`,
+          },
           {
             name: `Twitter`,
             url: `https://twitter.com/knilesh_`,

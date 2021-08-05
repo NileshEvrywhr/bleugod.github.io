@@ -37,15 +37,15 @@ module.exports = {
           },
           {
             name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/theknilesh/`,
+            url: `https://www.linkedin.com/in/nileshevrywhr/`,
           },
           {
             name: `Twitter`,
-            url: `https://twitter.com/knilesh_`,
+            url: `https://twitter.com/nileshevrywhr`,
           },
           {
             name: `Github`,
-            url: `https://github.com/bleugod`,
+            url: `https://github.com/NileshEvrywhr/`,
           },
         ],
       },

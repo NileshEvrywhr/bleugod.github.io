@@ -6,14 +6,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `nilesh`,
+    siteTitle: `ΠΞ`,
     siteTitleAlt: `nilesh kumar's website`,
     siteHeadline: `nilesh kumar's website`,
-    siteUrl: `https://elegant-borg-d05721.netlify.app/`,
+    siteUrl: `https://nilesheverywhere.com`,
     siteDescription: `blogs about hacking and security, sometimes other disciplines too`,
     siteLanguage: `en`,
     siteImage: `./banner.jpg`,
-    author: `@knilesh_`
+    author: `nilesh kumar`
   },
   plugins: [
     {
@@ -60,9 +60,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `nilesh kumar - security technology society`,
-        short_name: `minimal-blog`,
-        description: `web log about hacking sometimes other disciplines`,
+        name: `nilesh kumar's website`,
+        short_name: `blog`,
+        description: `documenting all works about hacking, sometimes other disciplines`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,

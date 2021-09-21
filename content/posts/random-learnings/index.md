@@ -35,7 +35,7 @@ i'm looking at you, "easy" warmup challenge **pimple** - used Google Lens on pho
 
 
 ### browsing the dark web
-**Mike Shallot**, OSINT - first challenge i encountered which required me to explore the dark corners of the internet - and now it's so much easier to do so Private with Tor on the Brave Browser - also I'm a Brave Verified Creator so you could show your support by sending me BAT right here from this website - [crypto supercharges the great online game](https://www.notboring.co/p/the-great-online-game)
+**Mike Shallot**, OSINT - first challenge i encountered which required me to explore the dark corners of the internet - and now it's so much easier to connect to Tor network with the Brave Browser's Private with Tor feature - i did try installing Tor at first, but there were some errors - plus i had Brave already installed so i thought i'll try the feature this time - surprisingly, this browser doesn't even need admin rights for installation(i should research on the how) - it blocks ads & trackers by default, and you get Basic Attention Tokens just for using the browser - which you can send directly to favorite creators on the internet - try sending me some right here from this website - [crypto supercharges the great online game](https://www.notboring.co/p/the-great-online-game) - i realize i sound sponsored right now, i'm not. 
 
 
 ### \n is the not newline character

@@ -6,11 +6,11 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `ΠΞ`,
-    siteTitleAlt: `nilesh kumar's website`,
-    siteHeadline: `nilesh kumar's website`,
+    siteTitle: `nilesh`,
+    siteTitleAlt: `nilesh`,
+    siteHeadline: `nilesh`,
     siteUrl: `https://nilesheverywhere.com`,
-    siteDescription: `blogs about hacking and security, sometimes other disciplines too`,
+    siteDescription: `blogs about computer hacking & security, other disciplines`,
     siteLanguage: `en`,
     siteImage: `./banner.jpg`,
     author: `nilesh kumar`
@@ -34,11 +34,7 @@ module.exports = {
           {
             name: `YouTube`,
             url: `https://www.youtube.com/channel/UCDPM7ajDWA4Tk-r4jzfxwqw`,
-          },
-          {
-            name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/nileshevrywhr/`,
-          },
+          },   
           {
             name: `Twitter`,
             url: `https://twitter.com/nileshevrywhr`,
@@ -60,9 +56,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `nilesh kumar's website`,
-        short_name: `blog`,
-        description: `documenting all works about hacking, sometimes other disciplines`,
+        name: `nilesh`,
+        short_name: `nilesh`,
+        description: `blogs about computer hacking & security, other disciplines`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,

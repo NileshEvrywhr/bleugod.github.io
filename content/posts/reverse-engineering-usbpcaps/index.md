@@ -5,8 +5,8 @@ slug: "/reverse-engineering-usbpcaps"
 description: usb devices also communicate with the host using packets and can be anlyzed using packet inspection tool; i used wireshark to inspect a pcap file and reverse engineer keystrokes to find a flag inside 
 tags:
   - pcap
-  - 
-  - 
+  - USB
+  - reverse engineering
 banner: "pexels-alena-shekhovtcova-6075003.jpg"
 ---
 

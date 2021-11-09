@@ -96,11 +96,38 @@ curl -s "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarBy
 and now to get notified whenever these actually useful slots are available, i made a slack bot with incoming webhooks functionality [following this blog](https://www.cloudsavvyit.com/289/how-to-send-a-message-to-slack-from-a-bash-script/), and
 ![slack-incoming-webhooks.png](slack-incoming-webhooks.png)
 
+```bash {1,23}
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/your/hook/notmine"
+
+# filter API response for nearby slots
+SLOTS=$(curl -s "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=650&date='"$(TZ="Asia/Kolkata" date '+%d-%m-%Y')"'" \
+    -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0' \
+    -H 'Accept: application/json, text/plain, */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Origin: https://www.cowin.gov.in' \
+    -H 'Connection: keep-alive' -H 'Referer: https://www.cowin.gov.in/' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site' \
+    -H 'If-None-Match: W/"c814-j9lr8tf0dp82O8Oy0UxJz4n3gEs"' -H 'TE: trailers' | 
+    jq -r '.centers[] | select(.fee_type == "Free") | select(.sessions[].min_age_limit == 18) | select(.sessions[].vaccine == "COVISHIELD") 
+    | select(.name == "GBN DISTRICT COMBINED HOSPITAL" 
+    or .name == "GBN ESIC MODEL HOSPITAL" 
+    or .name == "GBN GIP MALL COVISHIELD" 
+    or .name == "GBN PHC BAROLA" 
+    or .name == "GBN PHC MAMURA" 
+    or .name == "GBN SSPHPGTI NOIDA" 
+    or .name == "MAHILA SPECIAL GBN 01 (18-44)" 
+    or .name == "GBN UPHC RAIPUR" 
+    or .name == "GBN SPECTRUM METRO MALL") 
+    | select(.sessions[].available_capacity_dose1 > 0) 
+    | [(.sessions[].available_capacity_dose1|tostring), .name] | join(" ")' | sort -u)
+
+# send messsages on SLACK
+curl -X POST -H 'Content-type: application/json' --data '{"text":"'"$SLOTS"'"}' $SLACK_WEBHOOK_URL
+```
+
 made adjustments so each time i query the API the filtered response gets stored in a bash variable and is sent as a text message to my new slack channel #cowinsalad. et voilà! und da ist es! a ma laila nō!
 
 ![slack.png](slack.png)
 
 also to automate querying the API, i setup a cronjob so this script runs every few hours and sneds me the available slots for that time
-```
+
+```noLineNumbers
 30 1,5,9,13 * * * bash cowinsalad/slots.sh
 ``` 

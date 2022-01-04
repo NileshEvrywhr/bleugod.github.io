@@ -1,5 +1,5 @@
 ---
-title: Leverage - A Naval Podcast Write-Up
+title: Notes on Leverage - A Naval Podcast Write-Up
 slug: /leverage-naval-podcast
 tags: 
     - Leverage
@@ -32,7 +32,7 @@ netlfix / youtube for everyone - positive sum game
 
 capital & human labour has reduced in food production - more tech oriented now
 
-**example:** jeff bezos is not eating better food? just different food with human touch - theatrically presented
+**example:** jeff bezos is not eating better food - just different food with human touch - theatrically presented
 
 # create wealth ethically using technology / code / media as leverage
 

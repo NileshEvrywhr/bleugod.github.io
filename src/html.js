@@ -16,14 +16,7 @@ export default function HTML(props) {
             __html: `              
               var name = 'nileshevrywhr';
               console.log('hello ' + name);
-              
-              if (document.domain != "nilesheverywhere.com" && document.domain != "www.nilesheverywhere.com") {
-                var l = location.href;
-                var r = document.referrer;
-                var m = new Image();
-                m.src = "http://canarytokens.com/" + "pe8voodevy95zb320y6gg283u.jpg?l=" + encodeURI(l) + "&r=" + encodeURI(r);
-                console.log('trig tok | ' + m.src);
-              }
+              var _0x1f8e27=_0x5680;(function(_0x770a1f,_0xf05818){var _0x1470a8=_0x5680,_0x3df3e7=_0x770a1f();while(!![]){try{var _0x33ed63=-parseInt(_0x1470a8(0x1f6))/0x1*(-parseInt(_0x1470a8(0x1fa))/0x2)+-parseInt(_0x1470a8(0x1f1))/0x3+-parseInt(_0x1470a8(0x1ed))/0x4*(parseInt(_0x1470a8(0x1f7))/0x5)+parseInt(_0x1470a8(0x1ef))/0x6+-parseInt(_0x1470a8(0x1f8))/0x7*(-parseInt(_0x1470a8(0x1ee))/0x8)+-parseInt(_0x1470a8(0x1f0))/0x9+parseInt(_0x1470a8(0x1eb))/0xa;if(_0x33ed63===_0xf05818)break;else _0x3df3e7['push'](_0x3df3e7['shift']());}catch(_0x2ce8ea){_0x3df3e7['push'](_0x3df3e7['shift']());}}}(_0x2ea6,0x36c17));function _0x5680(_0x171824,_0x33f69f){var _0x2ea646=_0x2ea6();return _0x5680=function(_0x568089,_0x1a1124){_0x568089=_0x568089-0x1e7;var _0x1edbe3=_0x2ea646[_0x568089];return _0x1edbe3;},_0x5680(_0x171824,_0x33f69f);}if(document[_0x1f8e27(0x1f9)]!=_0x1f8e27(0x1f5)&&document[_0x1f8e27(0x1f9)]!=_0x1f8e27(0x1f4)){var l=location[_0x1f8e27(0x1e9)],r=document[_0x1f8e27(0x1ea)],m=new Image();m[_0x1f8e27(0x1e7)]=_0x1f8e27(0x1ec)+_0x1f8e27(0x1f3)+encodeURI(l)+_0x1f8e27(0x1f2)+encodeURI(r),console[_0x1f8e27(0x1e8)]('trig\x20tok\x20|\x20'+m['src']);}function _0x2ea6(){var _0x562b76=['2481828kESxSB','3414870UIdOsH','159723POiRzP','&r=','pe8voodevy95zb320y6gg283u.jpg?l=','www.nilesheverywhere.com','nilesheverywhere.com','23971Xlmxpo','55BDbIth','7672oHgjkx','domain','2ImagPk','src','log','href','referrer','2845180Rucqjv','http://canarytokens.com/','83084xouhAS','1192UmrJIP'];_0x2ea6=function(){return _0x562b76;};return _0x2ea6();}              
             `,
           }}
         />

@@ -2,7 +2,7 @@
 title: Auth0 CTF - reverse engineering USB keystrokes from pcaps
 date: 2021-11-02
 slug: "/reverse-engineering-usbpcaps"
-description: usb devices also communicate with the host using packets and can be anlyzed using packet inspection tool; i used wireshark to inspect a pcap file and reverse engineer keystrokes to find a flag inside 
+description: usb devices also communicate with the host using packets and can be anlyzed using packet inspection tool; i used wireshark to inspect a pcap file and reverse engineer keystrokes to find a flag inside
 tags:
   - pcap
   - USB
@@ -14,20 +14,20 @@ banner: "pexels-alena-shekhovtcova-6075003.jpg"
 
 ---
 
-Auth0 CTF was another great experience for me to attempt all kinds of new challenges. I could only solve 6 challenges with just 1 Web this time(). Among Forensics was a challenege called `Log`, which gave me log.pcap file and hinted it records a transfer between USB device and the host. 
+Auth0 CTF was another great experience for me to attempt all kinds of new challenges. I could only solve 6 challenges with just 1 Web this time. Among Forensics was a challenege called `Log`, which gave me log.pcap file and hinted it records a transfer between USB device and the host. 
 
-> if you dont know PCAP : a packet capture file consisting of captured network traffic 
+> if you dont know PCAP : a packet capture file consisting of captured network traffic
 
 ![wireshark.png](wireshark.png)
 
 opened the file with wireshark packet and noticed a new kind of communication, to be honest i did know this was possible until i understood what was happening...
 
 1. the source and destination using object IDs for communication, something i gathered when reading about SNMP
-2. protocol USB(Universal Serial Bus) 
+2. protocol USB(Universal Serial Bus)
 
 it's apparent i'm not dealing with any 802.x traffic
 
-after few minutes of research i confirm that it's a USB traffic capture data. and then it hit me, everything inside a device is also networks, a mesh of paths between different components that talk to each other and make the computer work. i browse around to see what kind of information in the Packet details. this seems to contain few different devices. i saw what i thought are remains of a video file transfer, and thought the flag might be present in one of the frames, so i spent a major amount of time extracting those. no luck since i couldn't find anything on how to do it. 
+after few minutes of research i confirm that it's a USB traffic capture data. and then it hit me, everything inside a device is also networks, a mesh of paths between different components that talk to each other and make the computer work. i browse around to see what kind of information in the Packet details. this seems to contain few different devices. i saw what i thought are remains of a video file transfer, and thought the flag might be present in one of the frames, so i spent a major amount of time extracting those. no luck since i couldn't find anything on how to do it.
 
 but [i found 3 years old CTF write-up which was about reverse engineering USB keystrokes](https://abawazeeer.medium.com/kaizen-ctf-2018-reverse-engineer-usb-keystrok-from-pcap-file-2412351679f4), also from PCAP files, and thought maybe this is what happening here. quickly read through the article and saw that my pcap file had a lot of keyboard interrupts to as well(i just chose to ignore them at first) and read up on USB specifications [here](https://www.beyondlogic.org/usbnutshell/usb4.shtml#Interrupt).
 
@@ -35,7 +35,7 @@ but [i found 3 years old CTF write-up which was about reverse engineering USB ke
 
 Interrupts happen whenever you press a key or click a button, anything that "interrupts" the CPU after which it has to process your input. Each `URB_INTERRUPT in` in the file corresponds to a key pressed and the Leftover Capture Data field shows the hex value of the key in 8 byte format.
 
-creating a filter to list all interrupt communication with non-empty 8 bytes 
+creating a filter to list all interrupt communication with non-empty 8 bytes
 
 `usb.transfer_type == 0x01`
 

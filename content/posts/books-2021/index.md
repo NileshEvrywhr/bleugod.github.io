@@ -1,5 +1,5 @@
 ---
-title: 5 Books of 2021 that changed my Thinking  
+title: 5 Books to change Perspectives(i read in 2021)
 date: 2022-01-18
 slug: "/books-2021"
 description: the books i read in 2021 that changed how I think about lifestyle design, creativity, money & learning 

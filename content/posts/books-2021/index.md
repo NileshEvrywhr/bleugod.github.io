@@ -12,7 +12,7 @@ tags:
 banner: "./pexels-pixabay-159711.jpg"
 ---
 
-![replace this](./pexels-pixabay-159711.jpg)
+![not my library](./pexels-pixabay-159711.jpg)
 
 ---
 

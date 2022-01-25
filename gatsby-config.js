@@ -13,7 +13,7 @@ module.exports = {
     siteDescription: `blogs about computer hacking & security, other disciplines`,
     siteLanguage: `en`,
     siteImage: `./banner.jpg`,
-    author: `nilesh kumar`
+    author: `nilesh kumar`,
   },
   plugins: [
     {
@@ -32,16 +32,20 @@ module.exports = {
         ],
         externalLinks: [
           {
+            name: `Twitch`,
+            url: `https://www.twitch.tv/nileshevrywhr`,
+          },
+          {
             name: `YouTube`,
             url: `https://www.youtube.com/channel/UCDPM7ajDWA4Tk-r4jzfxwqw`,
-          },   
+          },
           {
             name: `Twitter`,
             url: `https://twitter.com/nileshevrywhr`,
           },
           {
             name: `Github`,
-            url: `https://github.com/NileshEvrywhr/`,
+            url: `https://github.com/nileshevrywhr/`,
           },
         ],
       },
@@ -89,4 +93,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
